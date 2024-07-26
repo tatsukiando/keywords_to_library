@@ -8,7 +8,7 @@ require 'uri'
 
 cgi = CGI.new
 isbn = cgi['isbn']
-app_key = "013b0ddd619027eb3415b049b1af5890"
+app_key = "app_key"
 
 def fetch_api_data(app_key, isbn, session = nil)
   url = "http://api.calil.jp/check?appkey=#{app_key}&isbn=#{isbn}&format=xml&systemid=Univ_Tsukuba"
